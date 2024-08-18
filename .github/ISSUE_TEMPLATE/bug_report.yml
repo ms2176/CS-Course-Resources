@@ -10,6 +10,7 @@ body:
       label: "Describe the bug"
       description: "A clear and concise description of what the bug is."
       placeholder: "Describe the issue here..."
+    validations:
       required: true
 
   - type: textarea
@@ -18,6 +19,7 @@ body:
       label: "Steps to Reproduce"
       description: "Steps to reproduce the behavior."
       placeholder: "1. Go to '...'\n2. Click on '...'\n3. See error"
+    validations:
       required: true
 
   - type: textarea
@@ -26,6 +28,7 @@ body:
       label: "Expected Behavior"
       description: "What you expected to happen."
       placeholder: "Describe what you expected here..."
+    validations:
       required: true
 
   - type: textarea
