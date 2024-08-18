@@ -2,7 +2,7 @@ name: General Issue Form
 description: "Use this form to report bugs, request features, or suggest new resources."
 title: "General Issue Report"
 labels: []
-assignees: []
+assignees: ms2176
 
 body:
   - type: dropdown
