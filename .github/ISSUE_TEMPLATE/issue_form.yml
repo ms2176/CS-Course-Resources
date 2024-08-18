@@ -1,6 +1,6 @@
 name: General Issue Form
 description: "Use this form to report bugs, request features, or suggest new resources."
-title: "Issue Form"
+title: ""
 labels: []
 assignees: ms2176
 
@@ -13,7 +13,6 @@ body:
         - Bug report
         - Feature request
         - New resource
-    validations:
       required: true
 
   - type: input
@@ -22,7 +21,6 @@ body:
       label: "Issue Title"
       description: "Provide a short, clear title for your issue."
       placeholder: "e.g., [Bug]: Issue with login page"
-    validations:
       required: true
 
   - type: textarea
@@ -31,7 +29,6 @@ body:
       label: "Description"
       description: "Describe the issue or suggestion in detail."
       placeholder: "Provide a clear and concise description..."
-    validations:
       required: true
 
   - type: textarea
@@ -40,9 +37,9 @@ body:
       label: "Steps to Reproduce"
       description: "If reporting a bug, provide the steps to reproduce the issue."
       placeholder: "1. Go to '...'\n2. Click on '...'\n3. Scroll down to '...'\n4. See error"
-    conditions:
-      - field: issue_type
-        value: Bug report
+    if:
+      field: issue_type
+      equals: Bug report
 
   - type: textarea
     id: expected_behavior
@@ -50,9 +47,9 @@ body:
       label: "Expected Behavior"
       description: "If reporting a bug, describe what you expected to happen."
       placeholder: "Describe the expected behavior here..."
-    conditions:
-      - field: issue_type
-        value: Bug report
+    if:
+      field: issue_type
+      equals: Bug report
 
   - type: textarea
     id: solution_description
@@ -60,9 +57,9 @@ body:
       label: "Proposed Solution"
       description: "If requesting a feature, describe the solution you'd like."
       placeholder: "I would like..."
-    conditions:
-      - field: issue_type
-        value: Feature request
+    if:
+      field: issue_type
+      equals: Feature request
 
   - type: textarea
     id: alternatives_description
@@ -70,9 +67,9 @@ body:
       label: "Alternatives Considered"
       description: "If requesting a feature, describe any alternatives you've considered."
       placeholder: "I've also considered..."
-    conditions:
-      - field: issue_type
-        value: Feature request
+    if:
+      field: issue_type
+      equals: Feature request
 
   - type: input
     id: course_details
@@ -80,9 +77,9 @@ body:
       label: "Course Details"
       description: "If suggesting a new resource, provide the Year, Course Name, and Course Code."
       placeholder: "Year 1, 2, 3, 4, PG - Course Name (Course Code)"
-    conditions:
-      - field: issue_type
-        value: New resource
+    if:
+      field: issue_type
+      equals: New resource
 
   - type: input
     id: resource_url
@@ -90,9 +87,9 @@ body:
       label: "Resource URL"
       description: "If suggesting a new resource, provide a valid URL accessible by HWU students."
       placeholder: "https://example.com/resource"
-    conditions:
-      - field: issue_type
-        value: New resource
+    if:
+      field: issue_type
+      equals: New resource
 
   - type: textarea
     id: resource_description
@@ -100,9 +97,9 @@ body:
       label: "Resource Description"
       description: "If suggesting a new resource, describe how it is helpful and how it will benefit others."
       placeholder: "Provide a clear and concise description..."
-    conditions:
-      - field: issue_type
-        value: New resource
+    if:
+      field: issue_type
+      equals: New resource
 
   - type: textarea
     id: additional_context
