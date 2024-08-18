@@ -1,23 +1,39 @@
----
-name: New resource
-about: Suggest a new resource here and we'll add it in the list
-title: "[New Resource]"
-labels: enhancement
-assignees: cr2007, Irfan2309
+name: New Resource Suggestion
+description: Suggest a new resource here and we'll add it to the list.
+title: "[New Resource]: Resource Name"
+labels: [enhancement]
+assignees: [ms2176]
+body:
+  - type: input
+    id: course_details
+    attributes:
+      label: "Course Details"
+      description: "Year 1, 2, 3, 4, PG - Course Name (Course Code)"
+      placeholder: "e.g., Year 1, Software Development (F27SA)"
+    validations:
+      required: true
 
----
+  - type: input
+    id: resource_url
+    attributes:
+      label: "Resource URL"
+      description: "Provide a valid URL that is accessible by HWU students."
+      placeholder: "https://example.com/resource"
+    validations:
+      required: true
 
-**Year**
-1, 2, 3, 4, PG
+  - type: textarea
+    id: resource_description
+    attributes:
+      label: "Resource Description"
+      description: "Describe how this resource is helpful and how it will benefit others."
+      placeholder: "Describe the resource and its benefits here..."
+    validations:
+      required: true
 
-**Course Name and Course Code**
-i.e. Software Development 1 (F27SA)
-
-**URL / Name of the resource**
-Provide a valid URL that is accessible by HWU students.
-
-**Description**
-How is this resource helpful? How will it benefit others? Are there any steps required for accessing it?
-
-**Additional context**
-Add any other context about the problem here. Maybe any additional steps prior to accessing that resource.
+  - type: textarea
+    id: additional_context
+    attributes:
+      label: "Additional Context"
+      description: "Add any other context about the resource here. Maybe any additional steps required prior to accessing it."
+      placeholder: "Include any additional information here..."
