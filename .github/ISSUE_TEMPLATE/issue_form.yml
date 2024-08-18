@@ -1,81 +1,17 @@
 name: General Issue Form
-description: "Use this form to report bugs, request features, or suggest new resources."
+description: "Use this form to submit an issue that doesn't fit into any of the predefined categories."
 title: "General Issue Report"
 labels: []
-assignees: ms2176
+assignees: [ms2176]
 
 body:
-  - type: dropdown
-    id: issue_type
-    attributes:
-      label: "What type of issue are you reporting?"
-      options:
-        - Bug report
-        - Feature request
-        - New resource
-
-  - type: input
-    id: title
-    attributes:
-      label: "Issue Title"
-      description: "Provide a short, clear title for your issue."
-      placeholder: "e.g., [Bug]: Issue with login page"
-
   - type: textarea
     id: description
     attributes:
       label: "Description"
       description: "Describe the issue or suggestion in detail."
       placeholder: "Provide a clear and concise description..."
-
-  - type: textarea
-    id: steps_to_reproduce
-    attributes:
-      label: "Steps to Reproduce"
-      description: "If reporting a bug, provide the steps to reproduce the issue."
-      placeholder: "1. Go to '...'\n2. Click on '...'\n3. Scroll down to '...'\n4. See error"
-
-  - type: textarea
-    id: expected_behavior
-    attributes:
-      label: "Expected Behavior"
-      description: "If reporting a bug, describe what you expected to happen."
-      placeholder: "Describe the expected behavior here..."
-
-  - type: textarea
-    id: solution_description
-    attributes:
-      label: "Proposed Solution"
-      description: "If requesting a feature, describe the solution you'd like."
-      placeholder: "I would like..."
-
-  - type: textarea
-    id: alternatives_description
-    attributes:
-      label: "Alternatives Considered"
-      description: "If requesting a feature, describe any alternatives you've considered."
-      placeholder: "I've also considered..."
-
-  - type: input
-    id: course_details
-    attributes:
-      label: "Course Details"
-      description: "If suggesting a new resource, provide the Year, Course Name, and Course Code."
-      placeholder: "Year 1, 2, 3, 4, PG - Course Name (Course Code)"
-
-  - type: input
-    id: resource_url
-    attributes:
-      label: "Resource URL"
-      description: "If suggesting a new resource, provide a valid URL accessible by HWU students."
-      placeholder: "https://example.com/resource"
-
-  - type: textarea
-    id: resource_description
-    attributes:
-      label: "Resource Description"
-      description: "If suggesting a new resource, describe how it is helpful and how it will benefit others."
-      placeholder: "Provide a clear and concise description..."
+      required: true
 
   - type: textarea
     id: additional_context
@@ -83,3 +19,10 @@ body:
       label: "Additional Context"
       description: "Provide any other relevant information or context."
       placeholder: "Include any additional information here..."
+
+  - type: input
+    id: optional_fields
+    attributes:
+      label: "Additional Information (Optional)"
+      description: "Provide any other optional information that might be helpful."
+      placeholder: "Optional details here..."
