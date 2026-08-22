@@ -2,6 +2,7 @@
 
 A heads-up for all courses in Computer Science at HWU (F291-COS)
 
+> [!TIP]
 > Have any suggestions that you want to add? <br />
 > [**Fork**](https://github.com/HWTechClub/CS-Course-Resources/fork) the project, add your resources for the particular course, and then set up a [Pull Request](https://github.com/HWTechClub/CS-Course-Resources/pulls).
 
